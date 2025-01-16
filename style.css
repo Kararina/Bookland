@@ -1,0 +1,308 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(35, 35, 35, 1);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 400px;
+}
+
+.navbar .nav-links li {
+    margin: 0 8px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    position: relative;
+    transition: transform 0.2s ease, color 0.3s ease;
+    margin-left: 15px;
+}
+
+.nav-links a:active {
+    color: #ff0000;
+}
+
+/* Hero Section */
+.hero {
+    height: 50vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(243, 63, 63, 1);
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-overlay h1 {
+    font-size: 3rem;
+}
+
+.hero-overlay p {
+    font-size: 1.2rem;
+}
+
+.hero-overlay .subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Popular Books Section */
+.popular-books {
+    text-align: left;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.popular-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.popular-header h2 {
+    font-size: 2rem;
+}
+
+.catalog-btn {
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 100px;
+    transition: color 0.3s ease;
+}
+
+.catalog-btn:hover {
+    color: #b30000;
+}
+
+.book-item .rating {
+    position: absolute;
+    bottom: 10px; /* Отступ от нижнего края */
+    left: 10px; /* Отступ от левого края */
+    font-size: 0.9rem;
+}
+
+.book-item .rating img.rating-icon {
+    width: 75px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.book-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.book-item:hover {
+    transform: translateY(-5px);
+}
+
+.book-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.book-item h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.book-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 0 20px;
+    text-align: left;
+}
+
+.book-item .btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #ff0000;
+    font-size: 0.9rem;
+    margin: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.book-item .btn:hover {
+    color: #b30000;
+}
+
+/* New Releases Section */
+.new-releases {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+.new-releases-content {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+.new-releases-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.new-releases-content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.new-releases-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.new-releases-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+
+.btn-more {
+    display: inline-block;
+    background-color: #ff0000;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-more:hover {
+    background-color: #b30000;
+}
+
+/* About Us Section */
+.about-us {
+    text-align: left;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-header {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.about-header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.about-text {
+    flex: 2;
+    max-width: 500px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    text-align: left;
+}
+
+.about-text strong {
+    font-weight: bold;
+    color: #000;
+}
